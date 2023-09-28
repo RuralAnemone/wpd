@@ -1,0 +1,11 @@
+nav {
+	text-align: center;
+	border: 10px;
+	border-color: #161f27;
+	border-style: outset;
+	margin: 10px;
+}
+
+img.cat {
+	border-radius: 18px;
+}
