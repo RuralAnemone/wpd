@@ -1,5 +1,6 @@
 img, video {
-	width: 320px
+	width: 320px;
+	border-radius: 18px;
 }
 
 p.copyright {
