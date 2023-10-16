@@ -1,4 +1,11 @@
 .h7 {
 	font-style: italic;
 	font-size: 69%; /* it's basically 2/3 */
+	margin-bottom: 0;
+	margin-top: 30px;
+	/* text-decoration-style: wavy !important; */
+}
+
+p:not(.h7) {
+	margin-top: 1ex; /* half an em */
 }
