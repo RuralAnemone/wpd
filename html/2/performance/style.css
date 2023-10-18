@@ -14,3 +14,8 @@ img {
 	width: 50%;
 	border-radius: 18px;
 }
+
+img.oceania {
+	height: 5em;
+	width: 5em;
+}
