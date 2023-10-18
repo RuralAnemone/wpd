@@ -9,3 +9,8 @@
 p:not(.h7) {
 	margin-top: 1ex; /* half an em */
 }
+
+img {
+	width: 50%;
+	border-radius: 18px;
+}
