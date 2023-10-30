@@ -1,0 +1,14 @@
+tr.struck > td {
+	text-decoration: line-through;
+	color: var(--text-main);
+}
+
+tr.struck > td > span.struck {
+	color: #f00;
+}
+
+/* .red {
+	color: #f00;
+} */
+
+/* oh boy I wish I couldn't write CSS like this!! */
