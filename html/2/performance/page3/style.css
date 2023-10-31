@@ -12,3 +12,27 @@ tr.struck > td > span.struck {
 } */
 
 /* oh boy I wish I couldn't write CSS like this!! */
+
+.beeg {
+	font-size: 11rem;
+	position: absolute;
+	transform: translateY(-11rem);
+}
+
+a.skip {
+	position: absolute;
+}
+
+a.skip:not(:focus) {
+	transform: translateY(-25rem);
+	transition: .3s;
+}
+
+a.skip:focus {
+	transform: translateY(-1rem);
+	transition: .3s;
+}
+
+.house {
+	color: hsl(235, 61%, 55%);
+}
