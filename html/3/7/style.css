@@ -1,0 +1,32 @@
+/*   imports   */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* end imports */
+
+:root {
+	--lapis: #235789ff;
+	--flame: #cf5c36ff;
+	--white: #f8f4e3ff;
+	--black: #071108ff;
+}
+
+body {
+	background-color: var(--black);
+	color: var(--white);
+	font-family: 'Inter', sans-serif;
+
+	margin-top: 2rem;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+main {
+	margin-bottom: 100vh;
+}
+
+.flame {
+	color: var(--flame);
+}
+
+.lapis {
+	color: var(--lapis);
+}
