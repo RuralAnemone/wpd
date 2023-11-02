@@ -1,26 +1,14 @@
-/*   imports   */
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-/* end imports */
+/*   import hell   */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+/* end import hell */
 
 :root {
-	--lapis: #235789ff;
-	--flame: #cf5c36ff;
-	--white: #f8f4e3ff;
-	--black: #071108ff;
-}
+	--lapis: hsl(209, 59%, 34%);
+	--flame: hsl(15, 61%, 51%);
+	--white: hsl(49, 60%, 93%);
+	--black: hsl(126, 42%, 5%);
 
-body {
-	background-color: var(--black);
-	color: var(--white);
-	font-family: 'Inter', sans-serif;
-
-	margin-top: 2rem;
-	margin-left: 25%;
-	margin-right: 25%;
-}
-
-main {
-	margin-bottom: 100vh;
+	--grey: hsl(49, 2%, 65%);
 }
 
 .flame {
@@ -28,5 +16,52 @@ main {
 }
 
 .lapis {
+	color: var(--lapis);
+}
+
+a:not(:hover) {
+	text-decoration: none;
+	border-bottom: calc(1rem / 7) dotted;
+	transition: 50s;
+	/* I still have no idea how this only takes like half a second but oh well */
+}
+
+a:hover {
+	text-decoration: none;
+	border-bottom-style: solid;
+	/* 👀 */
+	font-size: 69rem;
+	border-bottom-width: 10rem;
+
+	transition-property: font-size border-bottom-width;
+	transition: calc(6969s / 7);
+}
+
+/* section off I guess */
+
+body {
+	background-color: var(--black);
+	color: var(--white);
+	font-family: "Inter", sans-serif;
+
+	margin-top: 2rem;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 2rem;
+}
+
+main {
+	margin: 2rem;
+	margin-bottom: 69vh;
+}
+
+footer {
+	text-align: center;
+	font-style: italic;
+	color: var(--grey);
+}
+
+footer > a {
+	font-size: 1ex; /* half an em */
 	color: var(--lapis);
 }
