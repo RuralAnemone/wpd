@@ -1,5 +1,3 @@
-let root = document.querySelector(':root');
-
 // document.body already has class="dark" on it
 
 if (localStorage.getItem('theme') === null) {
