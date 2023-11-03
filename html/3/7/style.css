@@ -52,16 +52,16 @@ body {
 
 main {
 	margin: 2rem;
-	margin-bottom: 69vh;
 }
 
 footer {
+	margin-top: 60vh;
 	text-align: center;
 	font-style: italic;
 	color: var(--grey);
 }
 
 footer > a {
-	font-size: 1ex; /* half an em */
+	font-size: 1.5ex;
 	color: var(--lapis);
 }
