@@ -3,20 +3,31 @@
 /* end import hell */
 
 :root {
-	--lapis: hsl(209, 59%, 34%);
-	--flame: hsl(15, 61%, 51%);
+	--lapis-blue: hsl(209, 59%, 34%);
+	--flame-orange: hsl(15, 61%, 51%);
 	--white: hsl(49, 60%, 93%);
 	--black: hsl(126, 42%, 5%);
 
 	--grey: hsl(49, 2%, 65%);
+
+	--kelly-green: hsl(101, 48%, 44%);
+	--jonquil-yellow: hsl(47, 80%, 52%);
 }
 
-.flame {
-	color: var(--flame);
+.orange {
+	color: var(--flame-orange);
 }
 
-.lapis {
-	color: var(--lapis);
+.blue {
+	color: var(--lapis-blue);
+}
+
+.green {
+	color: var(--kelly-green);
+}
+
+.yellow {
+	color: var(--jonquil-yellow);
 }
 
 a:not(:hover) {
@@ -63,5 +74,5 @@ footer {
 
 footer > a {
 	font-size: 1.5ex;
-	color: var(--lapis);
+	color: var(--lapis-blue);
 }
