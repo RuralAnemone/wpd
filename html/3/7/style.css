@@ -5,13 +5,23 @@
 :root {
 	--lapis-blue: hsl(209, 59%, 34%);
 	--flame-orange: hsl(15, 61%, 51%);
-	--white: hsl(49, 60%, 93%);
-	--black: hsl(126, 42%, 5%);
+	/* --white: hsl(49, 60%, 93%);
+	--black: hsl(126, 42%, 5%); */
 
 	--grey: hsl(49, 2%, 65%);
 
 	--kelly-green: hsl(101, 48%, 44%);
 	--jonquil-yellow: hsl(47, 80%, 52%);
+}
+
+body.dark {
+	--white: hsl(49, 60%, 93%);
+	--black: hsl(126, 42%, 5%);
+}
+
+body:not(.dark) {
+	--white: hsl(126, 42%, 5%);
+	--black: hsl(49, 60%, 93%);
 }
 
 /*   aminations   */
@@ -142,12 +152,12 @@ div.theme-toggle {
 }
 
 div.theme-toggle:not(:hover) {
-	transform: scale(2);
+	transform: scale(1.75);
 	transition: 420.69ms;
 }
 
 div.theme-toggle:hover {
-	transform: scale(2.5);
+	transform: scale(calc(1.75 * 6/5));
 	transition: 420.69ms;
 }
 
