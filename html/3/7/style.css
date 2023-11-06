@@ -133,6 +133,11 @@ main {
 	margin: 2rem;
 }
 
+pre {
+	padding: 1rem;
+	border: 1px solid var(--grey);
+}
+
 footer {
 	margin-top: 50vh;
 	text-align: center;
