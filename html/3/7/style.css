@@ -95,15 +95,18 @@ body:not(.dark) {
 	color: var(--white);
 }
 
-a:not(:hover) {
+a {
 	text-decoration: none;
+	color: var(--lapis-blue);
+}
+
+a:not(:hover) {
 	border-bottom: calc(1rem / 7) dotted;
 	transition: 50s;
 	/* I still have no idea how this only takes like half a second but oh well */
 }
 
 a:hover {
-	text-decoration: none;
 	border-bottom-style: solid;
 	/* 👀 */
 	font-size: 69rem;
@@ -139,7 +142,6 @@ footer {
 
 footer > a {
 	font-size: 1.5ex;
-	color: var(--lapis-blue);
 }
 
 /*   theme toggle   */
