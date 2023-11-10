@@ -8,5 +8,5 @@ web page design files (class)
 		- [6](html/2/6)
 		- [performance](html/2/performance)
 
-	-3
+	- 3
 		- [7](html/3/7)
