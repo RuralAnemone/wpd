@@ -1,5 +1,5 @@
 /*   import hell   */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&display=swap');
 /* end import hell */
 
 :root {
@@ -138,6 +138,10 @@ pre {
 	border: 1px solid var(--grey);
 }
 
+.highlight {
+	border-bottom: calc(1rem / 7) dotted var(--jonquil-yellow);
+}
+
 footer {
 	margin-top: 75vh;
 	text-align: center;
@@ -178,3 +182,8 @@ div.theme-toggle > button {
 	padding: 0;
 }
 /* end theme toggle */
+
+code {
+	font-family: 'Fira Code', monospace;
+	font-size: 1.1rem;
+}
