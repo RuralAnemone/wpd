@@ -27,37 +27,37 @@ body:not(.dark) {
 /*   aminations   */
 @keyframes rainbow {
 	0% {
-		background: hsl(0, 100%, 50%);
+		color: hsl(0, 100%, 50%);
 	}
 	10% {
-		background: hsl(36, 100%, 50%);
+		color: hsl(36, 100%, 50%);
 	}
 	20% {
-		background: hsl(72, 100%, 50%);
+		color: hsl(72, 100%, 50%);
 	}
 	30% {
-		background: hsl(108, 100%, 50%);
+		color: hsl(108, 100%, 50%);
 	}
 	40% {
-		background: hsl(144, 100%, 50%);
+		color: hsl(144, 100%, 50%);
 	}
 	50% {
-		background: hsl(180, 100%, 50%);
+		color: hsl(180, 100%, 50%);
 	}
 	60% {
-		background: hsl(216, 100%, 50%);
+		color: hsl(216, 100%, 50%);
 	}
 	70% {
-		background: hsl(252, 100%, 50%);
+		color: hsl(252, 100%, 50%);
 	}
 	80% {
-		background: hsl(288, 100%, 50%);
+		color: hsl(288, 100%, 50%);
 	}
 	90% {
-		background: hsl(324, 100%, 50%);
+		color: hsl(324, 100%, 50%);
 	}
 	100% {
-		background: hsl(360, 100%, 50%);
+		color: hsl(360, 100%, 50%);
 	}
 }
 /* end animations */
@@ -93,6 +93,10 @@ body:not(.dark) {
 
 .white {
 	color: var(--white);
+}
+
+.rainbow {
+	animation: rainbow 1s infinite;
 }
 
 a {
