@@ -1,0 +1,193 @@
+/*   import hell   */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&display=swap');
+/* end import hell */
+
+:root {
+	--lapis-blue: hsl(209, 59%, 34%);
+	--flame-orange: hsl(15, 61%, 51%);
+	/* --white: hsl(49, 60%, 93%);
+	--black: hsl(126, 42%, 5%); */
+
+	--grey: hsl(49, 2%, 65%);
+
+	--kelly-green: hsl(101, 48%, 44%);
+	--jonquil-yellow: hsl(47, 80%, 52%);
+}
+
+body.dark {
+	--white: hsl(49, 60%, 93%);
+	--black: hsl(126, 42%, 5%);
+}
+
+body:not(.dark) {
+	--white: hsl(126, 42%, 5%);
+	--black: hsl(49, 60%, 93%);
+}
+
+/*   aminations   */
+@keyframes rainbow {
+	0% {
+		color: hsl(0, 100%, 50%);
+	}
+	10% {
+		color: hsl(36, 100%, 50%);
+	}
+	20% {
+		color: hsl(72, 100%, 50%);
+	}
+	30% {
+		color: hsl(108, 100%, 50%);
+	}
+	40% {
+		color: hsl(144, 100%, 50%);
+	}
+	50% {
+		color: hsl(180, 100%, 50%);
+	}
+	60% {
+		color: hsl(216, 100%, 50%);
+	}
+	70% {
+		color: hsl(252, 100%, 50%);
+	}
+	80% {
+		color: hsl(288, 100%, 50%);
+	}
+	90% {
+		color: hsl(324, 100%, 50%);
+	}
+	100% {
+		color: hsl(360, 100%, 50%);
+	}
+}
+/* end animations */
+
+:not(.easter-egg)::selection {
+	background: var(--jonquil-yellow);
+}
+
+/* waiting for the day when selection background animation ;-; */
+.easter-egg::selection {
+	animation: rainbow 5s infinite;
+}
+
+.orange {
+	color: var(--flame-orange);
+}
+
+.blue {
+	color: var(--lapis-blue);
+}
+
+.green {
+	color: var(--kelly-green);
+}
+
+.yellow {
+	color: var(--jonquil-yellow);
+}
+
+.black {
+	color: var(--black);
+}
+
+.white {
+	color: var(--white);
+}
+
+.rainbow {
+	animation: rainbow 1s infinite;
+}
+
+a {
+	text-decoration: none;
+	color: var(--lapis-blue);
+}
+
+a:not(:hover) {
+	border-bottom: calc(1rem / 7) dotted;
+	transition: 50s;
+	/* I still have no idea how this only takes like half a second but oh well */
+}
+
+a:hover {
+	border-bottom-style: solid;
+	/* 👀 */
+	font-size: 69rem;
+	border-bottom-width: 10rem;
+
+	transition-property: font-size border-bottom-width;
+	transition: calc(6969s / 7);
+}
+
+/* section off I guess */
+
+body {
+	background-color: var(--black);
+	color: var(--white);
+	font-family: "Inter", sans-serif;
+
+	margin-top: 2rem;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: 2rem;
+}
+
+main {
+	margin: 2rem;
+}
+
+pre {
+	padding: 1rem;
+	border: 1px solid var(--grey);
+}
+
+.highlight {
+	border-bottom: calc(1rem / 7) dotted var(--jonquil-yellow);
+}
+
+footer {
+	margin-top: 75vh;
+	text-align: center;
+	font-style: italic;
+	color: var(--grey);
+}
+
+footer > a {
+	font-size: 1.5ex;
+}
+
+/*   theme toggle   */
+div.theme-toggle {
+	/* position: fixed; */
+	/* top: 3em; */
+	/* right: 3em; */
+	float: right;
+	border: none;
+}
+
+div.theme-toggle:not(:hover) {
+	transform: scale(1.75);
+	transition: 420.69ms;
+}
+
+div.theme-toggle:hover {
+	transform: scale(calc(1.75 * 6/5));
+	transition: 420.69ms;
+}
+
+div.theme-toggle:hover > button > img {
+	cursor: pointer;
+}
+
+div.theme-toggle > button {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
+/* end theme toggle */
+
+code {
+	font-family: 'Fira Code', monospace;
+	font-size: 1.1rem;
+}
