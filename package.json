@@ -1,4 +1,7 @@
 {
+	"scripts": {
+		"clean": "bun prettier --write ."
+	},
 	"dependencies": {
 		"prettier": "^3.1.0"
 	}
