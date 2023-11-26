@@ -1,5 +1,5 @@
 /*   import hell   */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&display=swap");
 /* end import hell */
 
 :root {
@@ -172,7 +172,7 @@ div.theme-toggle:not(:hover) {
 }
 
 div.theme-toggle:hover {
-	transform: scale(calc(1.75 * 6/5));
+	transform: scale(calc(1.75 * 6 / 5));
 	transition: 420.69ms;
 }
 
@@ -188,6 +188,6 @@ div.theme-toggle > button {
 /* end theme toggle */
 
 code {
-	font-family: 'Fira Code', monospace;
+	font-family: "Fira Code", monospace;
 	font-size: 1.1rem;
 }

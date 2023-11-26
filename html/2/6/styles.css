@@ -1,17 +1,28 @@
-img, video {
+img,
+video {
 	width: 320px;
 	border-radius: 18px;
 }
 
 p.copyright {
-	animation: shake calc(1s/6) linear infinite;
+	animation: shake calc(1s / 6) linear infinite;
 	width: 15em;
 }
 
 @keyframes shake {
-	0% { transform: translate(0, 0) rotate(0deg); }
-	25% { transform: translate(5px, 5px) rotate(5deg); }
-	50% { transform: translate(0, 0) rotate(0deg); }
-	75% { transform: translate(-5px, 5px) rotate(-5deg); }
-	100% { transform: translate(0, 0) rotate(0deg); }
+	0% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	25% {
+		transform: translate(5px, 5px) rotate(5deg);
+	}
+	50% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	75% {
+		transform: translate(-5px, 5px) rotate(-5deg);
+	}
+	100% {
+		transform: translate(0, 0) rotate(0deg);
+	}
 }

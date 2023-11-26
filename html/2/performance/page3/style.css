@@ -25,12 +25,12 @@ a.skip {
 
 a.skip:not(:focus) {
 	transform: translateY(-25rem);
-	transition: .3s;
+	transition: 0.3s;
 }
 
 a.skip:focus {
 	transform: translateY(-1rem);
-	transition: .3s;
+	transition: 0.3s;
 }
 
 .house {
