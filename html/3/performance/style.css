@@ -196,7 +196,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	
+
 	border: 10px groove var(--white);
 	padding: 1rem;
 }
