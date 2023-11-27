@@ -16,11 +16,11 @@
 
 body.dark {
 	--white: hsl(49, 60%, 93%);
-	--black: hsl(126, 42%, 5%);
+	--black: hsl(126, 42%, 0%);
 }
 
 body:not(.dark) {
-	--white: hsl(126, 42%, 5%);
+	--white: hsl(126, 42%, 0%);
 	--black: hsl(49, 60%, 93%);
 }
 
@@ -190,4 +190,28 @@ div.theme-toggle > button {
 code {
 	font-family: "Fira Code", monospace;
 	font-size: 1.1rem;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	border: 10px groove var(--kelly-green);
+	padding: 1rem;
+}
+
+nav > .breadcrumbs {
+	font-size: 1.5rem;
+}
+
+nav > .breadcrumbs > a {
+	border: none;
+	transition: none;
+	color: var(--white);
+}
+
+/* fix the scaling thing */
+nav > .breadcrumbs > a:hover {
+	font-size: inherit;
 }

@@ -7,10 +7,17 @@
 
 		<link rel="stylesheet" href="../style.css" />
 		<script async src="../theme-toggle.js"></script>
+		<script async src="../navbar-select.js"></script>
 	</head>
 	<body class="dark">
 		<header>
 			<nav>
+				<!-- breaducrumbs -->
+				<div class="breadcrumbs">
+					<a href="..">/</a>
+					<a href=".">foods</a>
+				</div>
+				<!-- /breaducrumbs -->
 				<!-- theme toggle -->
 				<div class="theme-toggle" mode="dark">
 					<button onclick="toggleTheme()"><img src="/html/3/performance/img/dark.svg" alt="theme toggle" /></button>
@@ -18,7 +25,9 @@
 				<!-- /theme toggle -->
 			</nav>
 		</header>
-		<main>food to eat</main>
+		<main>
+			foods to eat
+		</main>
 		<footer></footer>
 	</body>
 </html>

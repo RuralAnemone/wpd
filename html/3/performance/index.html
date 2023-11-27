@@ -3,14 +3,27 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=r, initial-scale=1.0" />
-		<title>Document</title>
+		<title>sweden</title>
 
 		<link rel="stylesheet" href="style.css" />
 		<script async src="theme-toggle.js"></script>
+		<script async src="navbar-select.js"></script>
 	</head>
 	<body class="dark">
 		<header>
 			<nav>
+				<!-- breaducrumbs -->
+				<div class="breadcrumbs">
+					<a href=".">/</a>
+					<select name="potential" id="potential">
+						<option value="select">select a page</option>
+						<option value="things">things</option>
+						<option value="places">places</option>
+						<option value="foods">foods</option>
+					</select>
+					<button class="go" onclick="go()">go</button>
+				</div>
+				<!-- /breaducrumbs -->
 				<!-- theme toggle -->
 				<div class="theme-toggle" mode="dark">
 					<button onclick="toggleTheme()"><img src="img/dark.svg" alt="theme toggle" /></button>
@@ -18,7 +31,8 @@
 				<!-- /theme toggle -->
 			</nav>
 		</header>
-		<main>go to sweden dammit
+		<main>
+			go to sweden dammit
 			<p><a href="things">things to do</a></p>
 			<p><a href="places">places to go</a></p>
 			<p><a href="foods">foods to eat</a></p>
