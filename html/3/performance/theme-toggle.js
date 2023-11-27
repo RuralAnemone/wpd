@@ -10,13 +10,13 @@ else toDark();
 function toLight() {
 	localStorage.setItem("theme", "light");
 	document.body.classList.remove("dark");
-	document.querySelector("div.theme-toggle > button > img").setAttribute("src", "img/light.svg");
+	document.querySelector("div.theme-toggle > button > img").setAttribute("src", "/html/3/performance/img/light.svg");
 }
 
 function toDark() {
 	localStorage.setItem("theme", "dark");
 	document.body.classList.add("dark");
-	document.querySelector("div.theme-toggle > button > img").setAttribute("src", "img/dark.svg");
+	document.querySelector("div.theme-toggle > button > img").setAttribute("src", "/html/3/performance/img/dark.svg");
 }
 
 function toggleTheme() {
