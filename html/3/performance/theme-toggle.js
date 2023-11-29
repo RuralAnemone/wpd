@@ -1,3 +1,5 @@
+const pathPrefix = location.origin === "ruralanemone.github.io" ? "/wpd/html/3/performance/" : "/html/3/performance/"
+
 // document.body already has class="dark" on it
 
 if (localStorage.getItem("theme") === null) {
@@ -10,13 +12,13 @@ else toDark();
 function toLight() {
 	localStorage.setItem("theme", "light");
 	document.body.classList.remove("dark");
-	document.querySelector("div.theme-toggle > button > img").setAttribute("src", "/html/3/performance/img/light.svg");
+	document.querySelector("div.theme-toggle > button > img").setAttribute("src", pathPrefix + "img/light.svg");
 }
 
 function toDark() {
 	localStorage.setItem("theme", "dark");
 	document.body.classList.add("dark");
-	document.querySelector("div.theme-toggle > button > img").setAttribute("src", "/html/3/performance/img/dark.svg");
+	document.querySelector("div.theme-toggle > button > img").setAttribute("src", pathPrefix + "img/dark.svg");
 }
 
 function toggleTheme() {
