@@ -203,15 +203,28 @@ nav {
 
 nav > .breadcrumbs {
 	font-size: 1.5rem;
+	border-bottom: 3px solid var(--white);
+}
+
+nav > .breadcrumbs:hover {
+	border-bottom: 3px solid var(--black);
 }
 
 nav > .breadcrumbs > a {
-	border: none;
-	transition: none;
 	color: var(--white);
+}
+
+nav > .breadcrumbs:not(:hover) {
+	border-bottom: 3px solid var(--black) !important;
+	transition-property: color;
+	transition: .5s;
 }
 
 /* fix the scaling thing */
 nav > .breadcrumbs > a:hover {
 	font-size: inherit;
+
+	border-bottom: 3px solid var(--white) !important;
+	transition-property: color;
+	transition: .5s;
 }
