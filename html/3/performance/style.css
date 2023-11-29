@@ -217,7 +217,7 @@ nav > .breadcrumbs > a {
 nav > .breadcrumbs:not(:hover) {
 	border-bottom: 3px solid var(--black) !important;
 	transition-property: color;
-	transition: .5s;
+	transition: 0.5s;
 }
 
 /* fix the scaling thing */
@@ -226,5 +226,5 @@ nav > .breadcrumbs > a:hover {
 
 	border-bottom: 3px solid var(--white) !important;
 	transition-property: color;
-	transition: .5s;
+	transition: 0.5s;
 }
