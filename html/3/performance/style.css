@@ -27,37 +27,10 @@ body:not(.dark) {
 /*   aminations   */
 @keyframes rainbow {
 	0% {
-		color: hsl(0, 100%, 50%);
-	}
-	10% {
-		color: hsl(36, 100%, 50%);
-	}
-	20% {
-		color: hsl(72, 100%, 50%);
-	}
-	30% {
-		color: hsl(108, 100%, 50%);
-	}
-	40% {
-		color: hsl(144, 100%, 50%);
-	}
-	50% {
-		color: hsl(180, 100%, 50%);
-	}
-	60% {
-		color: hsl(216, 100%, 50%);
-	}
-	70% {
-		color: hsl(252, 100%, 50%);
-	}
-	80% {
-		color: hsl(288, 100%, 50%);
-	}
-	90% {
-		color: hsl(324, 100%, 50%);
+		filter: hue-rotate(0deg);
 	}
 	100% {
-		color: hsl(360, 100%, 50%);
+		filter: hue-rotate(360deg);
 	}
 }
 /* end animations */
@@ -229,11 +202,7 @@ nav > .breadcrumbs > a:hover {
 	transition: 0.5s;
 }
 
-/* .header {
-
-} */
-
-img.header {
+.header-image {
 	position: absolute;
 	width: 100%;
 	height: 25%;
@@ -244,6 +213,12 @@ img.header {
 	filter: brightness(50%);
 }
 
-.everything {
+.header-image > image {
+	position: sticky;
+}
+
+main {
 	background-color: #0004;
+	padding: 10px;
+	
 }
