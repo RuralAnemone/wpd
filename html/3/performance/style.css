@@ -3,7 +3,6 @@
 /* end import hell */
 
 :root {
-	--lapis-blue: hsl(209, 59%, 34%);
 	--flame-orange: hsl(15, 61%, 51%);
 	/* --white: hsl(49, 60%, 93%);
 	--black: hsl(126, 42%, 5%); */
@@ -11,18 +10,20 @@
 	--grey: hsl(49, 2%, 65%);
 
 	--kelly-green: hsl(101, 48%, 44%);
-	--jonquil-yellow: hsl(47, 80%, 52%);
 }
 
 body.dark {
 	--white: hsl(49, 60%, 93%);
 	--black: hsl(126, 42%, 0%);
+
+	--lapis-blue: hsl(209, 61%, 75%);
+	--jonquil-yellow: hsl(47, 80%, 35%);
 }
 
-body:not(.dark) {
+/* body:not(.dark) {
 	--white: hsl(126, 42%, 0%);
 	--black: hsl(49, 60%, 93%);
-}
+} */
 
 /*   aminations   */
 @keyframes rainbow {
@@ -31,6 +32,20 @@ body:not(.dark) {
 	}
 	100% {
 		filter: hue-rotate(360deg);
+	}
+}
+
+@keyframes sweden {
+	0% {
+		color: #006aa7;
+	}
+
+	50% {
+		color: #ffcd00;
+	}
+
+	100% {
+		color: #006aa7;
 	}
 }
 /* end animations */
@@ -70,6 +85,10 @@ body:not(.dark) {
 
 .rainbow {
 	animation: rainbow 1s infinite;
+}
+
+.sweden {
+	animation: sweden 1s infinite;
 }
 
 a {
@@ -166,7 +185,8 @@ code {
 }
 
 nav {
-	display: flex;
+	/* display: flex; */
+	display: none;
 	align-items: center;
 	justify-content: space-between;
 
@@ -205,7 +225,6 @@ nav > .breadcrumbs > a:hover {
 .header-image {
 	position: absolute;
 	width: 100%;
-	height: 25%;
 	object-fit: cover;
 	top: 0;
 	left: 0;
@@ -214,7 +233,8 @@ nav > .breadcrumbs > a:hover {
 }
 
 .header-image > image {
-	position: sticky;
+	width: 100%;
+	height: auto;
 }
 
 main {
