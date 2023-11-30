@@ -1,4 +1,4 @@
-const pathPrefix = location.origin === "ruralanemone.github.io" ? "/wpd/html/3/performance/" : "/html/3/performance/"
+const pathPrefix = location.origin === "ruralanemone.github.io" ? "/wpd/html/3/performance/" : "/html/3/performance/";
 
 // document.body already has class="dark" on it
 
