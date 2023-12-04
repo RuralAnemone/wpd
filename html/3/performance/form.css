@@ -15,6 +15,7 @@ textarea {
 label {
 	padding: 12px 12px 12px 0;
 	display: inline-block;
+	color: black;
 }
 
 input[type="submit"] {
