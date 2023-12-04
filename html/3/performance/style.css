@@ -119,13 +119,14 @@ code {
 }
 
 .background-image {
+	user-select: none;
 	position: absolute;
 	width: 100%;
 	object-fit: cover;
 	top: 0;
 	left: 0;
 	z-index: -1;
-	filter: brightness(50%) /* blur(3px) */;
+	filter: brightness(50%) blur(0px);
 }
 
 .background-image > img {
