@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter&display=swap");
 /* end import hell */
 
+/* * {
+	transition: 1s;
+} */
+
 :root {
 	--white: hsl(49, 60%, 93%);
 	--black: hsl(126, 42%, 0%);
@@ -13,6 +17,8 @@
 	--kelly-green: hsl(101, 48%, 44%);
 	--lapis-blue: hsl(209, 61%, 75%);
 	--jonquil-yellow: hsl(47, 80%, 35%);
+
+	--side-margin: calc(2rem + (15vw));
 }
 
 /*   aminations   */
@@ -30,7 +36,7 @@
 		color: #006aa7;
 	}
 
-	50% {
+	60% {
 		color: #ffcd00;
 	}
 
@@ -82,8 +88,8 @@ body {
 	font-family: "Inter", sans-serif;
 
 	margin-top: 2rem;
-	margin-left: 25%;
-	margin-right: 25%;
+	margin-left: var(--side-margin);
+	margin-right: var(--side-margin);
 	margin-bottom: 2rem;
 }
 
