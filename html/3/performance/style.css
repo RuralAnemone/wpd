@@ -160,7 +160,7 @@ code {
 
 .navbar-item:not(:hover) {
 	background: #0000;
-	transition: 0.3s
+	transition: 0.3s;
 }
 
 .navbar-item.selected {
