@@ -3,29 +3,35 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=r, initial-scale=1.0" />
-		<title>foods</title>
+		<title>food you can eat</title>
 
 		<link rel="stylesheet" href="../style.css" />
-		<script async src="../theme-toggle.js"></script>
-		<script async src="../navbar-select.js"></script>
 	</head>
-	<body class="dark">
+	<body>
 		<header>
 			<nav>
-				<!-- breaducrumbs -->
-				<div class="breadcrumbs">
-					<a href="..">/</a>
-					<a href=".">foods</a>
+				<div class="navbar-container">
+					<a class="navbar-item" href="..">home</a>
+					<a class="navbar-item" href="../things/">things to do</a>
+					<a class="navbar-item" href="../places/">places to visit</a>
+					<a class="navbar-item selected" href=".">foods to eat</a>
 				</div>
-				<!-- /breaducrumbs -->
-				<!-- theme toggle -->
-				<div class="theme-toggle" mode="dark">
-					<button onclick="toggleTheme()"><img src="/html/3/performance/img/dark.svg" alt="theme toggle" /></button>
-				</div>
-				<!-- /theme toggle -->
 			</nav>
+			<div class="background-image">
+				<img src="../img/main-header.jpg" alt="image of sweden idk" />
+			</div>
 		</header>
-		<main>foods to eat</main>
+		<main>
+			<div class="header">
+				<h1>food you can eat</h1>
+			</div>
+			Top 10 food to eat in <span class="sweden">Sweden</span>:
+			<ul>
+				<li><a href="https://en.wikipedia.org/wiki/Fika">fika</a> (not a food but do it anyways)</li>
+				<li>semla. King Adolf Frederick, ruling over <span class="sweden">Sweden</span> during a time when he had basically no control, decided to just spend his time eating. One day, after a hearty dinner of lobster, sauerkraut, and kippers, washed down with champagne, he consumed 14 servings of semla. Shortly after, he died, probably of a stroke (the official diagnosis was "digestions problems," but this was the early 18th century).</li>
+				<img src="https://www.dixiecrystals.com/sites/default/files/styles/recipe_image_node_full/public/recipe/swedish-semla-semlor-dixie.jpg?itok=JOaz8lxR" alt="semla 🤤">
+			</ul>
+		</main>
 		<footer></footer>
 	</body>
 </html>

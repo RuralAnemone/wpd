@@ -167,7 +167,7 @@ code {
 	animation: sweden infinite 1s;
 }
 
-main > img {
+main > img, main > * > img {
 	width: calc(100% / 3);
 	border-radius: 18%;
 }
