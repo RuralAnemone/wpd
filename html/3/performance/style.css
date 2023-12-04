@@ -136,6 +136,7 @@ code {
 .navbar-container {
 	display: flex;
 	justify-content: space-between;
+	align-items: baseline;
 
 	background-color: var(--background-black);
 
@@ -147,10 +148,13 @@ code {
 
 .navbar-item {
 	padding: 1.5rem;
+	border: none !important;
 }
 
 .navbar-item:hover {
-	background: var(--background-black);
+	background-color: var(--background-black);
+	font-size: 24px;
+	transition-property: background-color font-size;
 	transition: 0.15s;
 }
 
@@ -160,7 +164,7 @@ code {
 }
 
 .navbar-item.selected {
-	background: var(--background-black) !important;
+	animation: sweden infinite 1s;
 }
 
 main > img {
