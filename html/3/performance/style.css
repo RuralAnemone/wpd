@@ -121,17 +121,27 @@ code {
 .background-image {
 	user-select: none;
 	position: absolute;
-	width: 100%;
+	width: 100vw;
+	height: auto;
 	object-fit: cover;
 	top: 0;
 	left: 0;
 	z-index: -1;
-	filter: brightness(50%) blur(0px);
+	/* filter: brightness(50%) blur(3px); */
+}
+
+.background-image:hover {
+	filter: brightness(69%) blur(0px);
+	transition: 0.7s
+}
+
+.background-image:not(:hover) {
+	filter: brightness(50%) blur(7px);
+	transition: 0.7s;
 }
 
 .background-image > img {
 	width: 100%;
-	height: auto;
 }
 
 .navbar-container {
