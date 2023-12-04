@@ -6,31 +6,18 @@
 		<title>sweden</title>
 
 		<link rel="stylesheet" href="style.css" />
-		<script async src="theme-toggle.js"></script>
-		<script async src="navbar-select.js"></script>
 	</head>
 	<body class="dark">
 		<header>
 			<nav>
-				<!-- breadcrumbs -->
-				<div class="breadcrumbs">
-					<a href=".">/</a>
-					<select name="potential" id="potential">
-						<option value="select">select a page</option>
-						<option value="things">things</option>
-						<option value="places">places</option>
-						<option value="foods">foods</option>
-					</select>
-					<button class="go" onclick="go()">go</button>
+				<div class="navbar-container">
+					<p class="navbar-item selected"><a href=".">home</a></p>
+					<p class="navbar-item"><a href="things/">things to do</a></p>
+					<p class="navbar-item"><a href="places/">places to visit</a></p>
+					<p class="navbar-item"><a href="foods/">foods to eat</a></p>
 				</div>
-				<!-- /breadcrumbs -->
-				<!-- theme toggle -->
-				<div class="theme-toggle" mode="dark">
-					<button onclick="toggleTheme()"><img src="img/dark.svg" alt="theme toggle" /></button>
-				</div>
-				<!-- /theme toggle -->
 			</nav>
-			<div class="header-image">
+			<div class="background-image">
 				<img src="img/main-header.jpg" alt="image of sweden idk" />
 			</div>
 		</header>

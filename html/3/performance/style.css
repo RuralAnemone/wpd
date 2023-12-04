@@ -132,3 +132,33 @@ code {
 	width: 100%;
 	height: auto;
 }
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+
+	background-color: var(--background-black);
+
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar-item {
+	padding: 1.5rem;
+}
+
+.navbar-item:hover {
+	background: var(--background-black);
+	transition: 0.15s;
+}
+
+.navbar-item:not(:hover) {
+	background: #0000;
+	transition: 0.3s
+}
+
+.navbar-item.selected {
+	background: var(--background-black) !important;
+}
