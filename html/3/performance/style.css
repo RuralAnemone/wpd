@@ -162,3 +162,8 @@ code {
 .navbar-item.selected {
 	background: var(--background-black) !important;
 }
+
+main > img {
+	width: calc(100% / 3);
+	border-radius: 18%;
+}
