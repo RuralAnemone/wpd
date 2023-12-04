@@ -138,11 +138,13 @@ code {
 
 .background-image:hover {
 	filter: brightness(69%) blur(0px);
+	transition-property: filter;
 	transition: 0.7s
 }
 
 .background-image:not(:hover) {
 	filter: brightness(50%) blur(7px);
+	transition-property: filter;
 	transition: 0.7s;
 }
 
