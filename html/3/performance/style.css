@@ -3,27 +3,17 @@
 /* end import hell */
 
 :root {
-	--flame-orange: hsl(15, 61%, 51%);
-	/* --white: hsl(49, 60%, 93%);
-	--black: hsl(126, 42%, 5%); */
-
-	--grey: hsl(49, 2%, 65%);
-
-	--kelly-green: hsl(101, 48%, 44%);
-}
-
-body.dark {
 	--white: hsl(49, 60%, 93%);
 	--black: hsl(126, 42%, 0%);
 
+	--background-black: #0004; /* 25% opacity */
+
+	--flame-orange: hsl(15, 61%, 51%);
+	--grey: hsl(49, 2%, 65%);
+	--kelly-green: hsl(101, 48%, 44%);
 	--lapis-blue: hsl(209, 61%, 75%);
 	--jonquil-yellow: hsl(47, 80%, 35%);
 }
-
-/* body:not(.dark) {
-	--white: hsl(126, 42%, 0%);
-	--black: hsl(49, 60%, 93%);
-} */
 
 /*   aminations   */
 @keyframes rainbow {
@@ -50,37 +40,9 @@ body.dark {
 }
 /* end animations */
 
-:not(.easter-egg)::selection {
-	background: var(--jonquil-yellow);
-}
-
 /* waiting for the day when selection background animation ;-; */
-.easter-egg::selection {
-	animation: rainbow 5s infinite;
-}
-
-.orange {
-	color: var(--flame-orange);
-}
-
-.blue {
-	color: var(--lapis-blue);
-}
-
-.green {
-	color: var(--kelly-green);
-}
-
-.yellow {
-	color: var(--jonquil-yellow);
-}
-
-.black {
-	color: var(--black);
-}
-
-.white {
-	color: var(--white);
+*::selection {
+	background-color: var(--jonquil-yellow);
 }
 
 .rainbow {
@@ -127,6 +89,8 @@ body {
 
 main {
 	margin: 2rem;
+	background-color: #0004;
+	padding: 10px;
 }
 
 pre {
@@ -149,80 +113,12 @@ footer > a {
 	font-size: 1.5ex;
 }
 
-/*   theme toggle   */
-div.theme-toggle {
-	/* position: fixed; */
-	/* top: 3em; */
-	/* right: 3em; */
-	float: right;
-	border: none;
-}
-
-div.theme-toggle:not(:hover) {
-	transform: scale(1.75);
-	transition: 420.69ms;
-}
-
-div.theme-toggle:hover {
-	transform: scale(calc(1.75 * 6 / 5));
-	transition: 420.69ms;
-}
-
-div.theme-toggle:hover > button > img {
-	cursor: pointer;
-}
-
-div.theme-toggle > button {
-	background-color: transparent;
-	border: 0;
-	padding: 0;
-}
-/* end theme toggle */
-
 code {
 	font-family: "Fira Code", monospace;
 	font-size: 1.1rem;
 }
 
-nav {
-	/* display: flex; */
-	display: none;
-	align-items: center;
-	justify-content: space-between;
-
-	border: 10px groove var(--white);
-	padding: 1rem;
-}
-
-nav > .breadcrumbs {
-	font-size: 1.5rem;
-	border-bottom: 3px solid var(--white);
-}
-
-nav > .breadcrumbs:hover {
-	border-bottom: 3px solid var(--black);
-}
-
-nav > .breadcrumbs > a {
-	color: var(--white);
-}
-
-nav > .breadcrumbs:not(:hover) {
-	border-bottom: 3px solid var(--black) !important;
-	transition-property: color;
-	transition: 0.5s;
-}
-
-/* fix the scaling thing */
-nav > .breadcrumbs > a:hover {
-	font-size: inherit;
-
-	border-bottom: 3px solid var(--white) !important;
-	transition-property: color;
-	transition: 0.5s;
-}
-
-.header-image {
+.background-image {
 	position: absolute;
 	width: 100%;
 	object-fit: cover;
@@ -232,13 +128,7 @@ nav > .breadcrumbs > a:hover {
 	filter: brightness(50%);
 }
 
-.header-image > image {
+.background-image > img {
 	width: 100%;
 	height: auto;
-}
-
-main {
-	background-color: #0004;
-	padding: 10px;
-	
 }
