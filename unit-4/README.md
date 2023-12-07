@@ -10,6 +10,12 @@ main goals:
 
 - use *that* knowledge to build a website
 
+	- what though? a writeup of what I've learned? that wouldn't be a very goood use of the API
+
+	- what if I make a Markdown renderer
+
+	- yeah
+
 ---
 
 <!-- other things go here yeah -->
