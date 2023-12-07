@@ -6,7 +6,7 @@ main goals:
 
 	- to a level that I'm comfortable doing [leetcode problems](https://leetcode.com/problemset/) with it
 
-- use that knowledge to learn the [Miso](https://haskell-miso.org/) api
+- use that knowledge to learn the [Miso](https://haskell-miso.org/) API
 
 - use *that* knowledge to build a website
 
