@@ -1,5 +1,5 @@
 cabal-version:      2.4
-name:               unit4
+name:               miso-markdown
 version:            0.1.0.0
 
 -- A short (one-line) description of the package.
@@ -14,7 +14,7 @@ version:            0.1.0.0
 -- The license under which the package is released.
 -- license:
 author:             Isaiah W
-maintainer:         64103005+RuralAnemone@users.noreply.github.com
+maintainer:         ruralanemone@duck.com
 
 -- A copyright notice.
 -- copyright:
