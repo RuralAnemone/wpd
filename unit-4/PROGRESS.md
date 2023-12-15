@@ -1,17 +1,5 @@
-# 2023-e
-so uh[^1]
+# 2023-12-15
 
-more stuff
+- decided to make this progress document
 
-[^1]: here lies le footnote
-
-	included in footnotre
-
-	```haskell
-	-- code moment
-	reverse' :: [a] -> [a]
-	reverse' [] = []
-	reverse' (x:xs) = reverse' xs ++ [x]
-	```
-
-even more stuff
+- I'm still on [LYAH](http://learnyouahaskell.com/chapters) but I'm making good headway (currently on [higher order functions](http://learnyouahaskell.com/higher-order-functions))
