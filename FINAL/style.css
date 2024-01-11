@@ -1,0 +1,11 @@
+.watermark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25%;
+	height: auto;
+}
+
+nav {
+	margin: 10%;
+}
