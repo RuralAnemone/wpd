@@ -139,7 +139,7 @@ code {
 .background-image:hover {
 	filter: brightness(69%) blur(0px);
 	transition-property: filter;
-	transition: 0.7s
+	transition: 0.7s;
 }
 
 .background-image:not(:hover) {
@@ -186,7 +186,8 @@ code {
 	animation: sweden infinite 1s;
 }
 
-main > img, main > * > img {
+main > img,
+main > * > img {
 	width: calc(100% / 3);
 	border-radius: 18%;
 }

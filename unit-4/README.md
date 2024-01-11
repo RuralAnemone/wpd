@@ -2,19 +2,19 @@
 
 main goals:
 
-- learn [Haskell](https://haskell.org)
+-   learn [Haskell](https://haskell.org)
 
-	- to a level that I'm comfortable doing [leetcode problems](https://leetcode.com/problemset/) with it
+    -   to a level that I'm comfortable doing [leetcode problems](https://leetcode.com/problemset/) with it
 
-- use that knowledge to learn the [Miso](https://haskell-miso.org/) API
+-   use that knowledge to learn the [Miso](https://haskell-miso.org/) API
 
-- use *that* knowledge to build a website
+-   use _that_ knowledge to build a website
 
-	- what though? a writeup of what I've learned? that wouldn't be a very goood use of the API
+    -   what though? a writeup of what I've learned? that wouldn't be a very goood use of the API
 
-	- what if I make a Markdown renderer
+    -   what if I make a Markdown renderer
 
-	- yeah
+    -   yeah
 
 ---
 
