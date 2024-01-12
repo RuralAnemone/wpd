@@ -1,11 +1,45 @@
+:root {
+	--background-black: #222;
+}
+
 .watermark {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 25%;
-	height: auto;
+	width: auto;
+	height: 3%;
+}
+
+.flex-wrapper {
+	display: flex;
+}
+
+nav > .flex-wrapper {
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 nav {
 	margin: 10%;
+}
+
+.navbar-item {
+	padding: 1.5rem;
+	border: none !important;
+}
+
+.navbar-item:hover {
+	background-color: var(--background-black);
+	font-size: 24px;
+	transition-property: background-color font-size;
+	transition: 0.15s;
+}
+
+.navbar-item:not(:hover) {
+	background: #0000;
+	transition: 0.3s;
+}
+
+.navbar-item.selected {
+	/* something interested */
 }
