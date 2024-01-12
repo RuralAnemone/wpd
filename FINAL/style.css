@@ -1,5 +1,17 @@
 :root {
-	--background-black: #222;
+
+	/* from https://draculatheme.com/contribute#color-palette */
+	--background: #282A36;
+	--current-line: #44475A;
+	--foreground: #F8F8F2;
+	--comment: #6272A4;
+	--cyan: #8BE9FD;
+	--green: #50FA7B;
+	--orange: #FFB86C;
+	--pink: #FF79C6;
+	--purple: #BD93F9;
+	--red: #FF5555;
+	--yellow: #F1FA8C;
 }
 
 .watermark {
@@ -29,7 +41,7 @@ nav {
 }
 
 .navbar-item:hover {
-	background-color: var(--background-black);
+	background-color: var(--background);
 	font-size: 24px;
 	transition-property: background-color font-size;
 	transition: 0.15s;
