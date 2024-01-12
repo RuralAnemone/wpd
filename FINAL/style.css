@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 :root {
 
 	/* from https://draculatheme.com/contribute#color-palette */
 	--background: #282A36;
+	--backbackground: #111217;
 	--current-line: #44475A;
 	--foreground: #F8F8F2;
 	--comment: #6272A4;
@@ -12,6 +15,11 @@
 	--purple: #BD93F9;
 	--red: #FF5555;
 	--yellow: #F1FA8C;
+}
+
+* {
+
+	font-family: 'Roboto Slab', 'Comic Sans', 'Comic', cursive, sans-serif;
 }
 
 .watermark {
@@ -41,7 +49,7 @@ nav {
 }
 
 .navbar-item:hover {
-	background-color: var(--background);
+	background-color: var(--backbackground);
 	font-size: 24px;
 	transition-property: background-color font-size;
 	transition: 0.15s;
@@ -54,4 +62,33 @@ nav {
 
 .navbar-item.selected {
 	/* something interested */
+}
+
+
+.cyan {
+	color: var(--cyan);
+}
+
+.green {
+	color: var(--green);
+}
+
+.orange {
+	color: var(--orange);
+}
+
+.pink {
+	color: var(--pink);
+}
+
+.purple {
+	color: var(--purple);
+}
+
+.red {
+	color: var(--red);
+}
+
+.yellow {
+	color: var(--yellow);
 }
