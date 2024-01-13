@@ -4,7 +4,7 @@
 
 	/* from https://draculatheme.com/contribute#color-palette */
 	--background: #282A36;
-	--backbackground: #111217;
+	--backbackground: hsl(230, 15%, 15%);
 	--current-line: #44475A;
 	--foreground: #F8F8F2;
 	--comment: #6272A4;
@@ -35,12 +35,15 @@
 }
 
 nav > .flex-wrapper {
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: baseline;
+	margin: 5px;
 }
 
 nav {
 	margin: 10%;
+	border: 1px solid var(--current-line);
+	border-radius: 5px;
 }
 
 .navbar-item {
@@ -60,8 +63,10 @@ nav {
 	transition: 0.3s;
 }
 
-.navbar-item.selected {
+.navbar-item.selected > a {
 	/* something interesting */
+	color: var(--green);
+	font-weight: 900;
 }
 
 
