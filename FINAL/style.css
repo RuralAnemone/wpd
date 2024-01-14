@@ -61,7 +61,7 @@ nav {
 	transition: 0.3s;
 }
 
-.navbar-item.selected > a {
+.navbar-link.selected {
 	/* something interesting */
 	color: var(--green);
 	font-weight: 900;
