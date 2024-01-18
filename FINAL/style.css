@@ -4,6 +4,7 @@
 	/* from https://draculatheme.com/contribute#color-palette */
 	--background: #282a36;
 	--backbackground: hsl(230, 15%, 15%);
+	--pagebackground: hsl(230, 15%, 16.5%);
 	--current-line: #44475a;
 	--foreground: #f8f8f2;
 	--comment: #6272a4;
@@ -93,4 +94,11 @@ nav {
 
 .yellow {
 	color: var(--yellow);
+}
+
+.content {
+	padding: 2rem;
+
+	border-radius: 5px;
+	background-color: var(--pagebackground);
 }
