@@ -205,7 +205,7 @@ address {
 	font-style: normal;
 }
 
-a[href^="mailto\:"]::before {
+/* a[href^="mailto\:"]::before {
 	content: "📧 ";
 }
 
@@ -215,7 +215,7 @@ a[href^="tel\:"]::before {
 
 a[href^="sms\:"]::before {
 	content: "💬 ";
-}
+} */
 
 mark {
 	background-color: #efdb43;

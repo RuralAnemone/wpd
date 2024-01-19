@@ -52,6 +52,7 @@ nav {
 
 .navbar-item:hover {
 	background-color: var(--backbackground);
+	border-radius: 5px;
 	font-size: 24px;
 	transition-property: background-color font-size;
 	transition: 0.15s;
@@ -101,4 +102,21 @@ nav {
 
 	border-radius: 5px;
 	background-color: var(--pagebackground);
+}
+
+header > h1 {
+	text-align: center;
+}
+
+.contact-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+
+	list-style: none;
+}
+
+.contact-item > a > img {
+	height: 48px;
+	width: auto;
 }
