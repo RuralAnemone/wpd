@@ -125,3 +125,13 @@ header > h1 {
 	height: 48px;
 	width: auto;
 }
+
+.css-credits {
+	/* scale down (or up) font size to fit 100% width */
+	font-size: calc(100% - 1px);
+}
+
+img.emoji {
+	width: 1rem;
+	height: 1rem;
+}
