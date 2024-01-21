@@ -18,6 +18,7 @@
 }
 
 * {
+	/* haha funny troll; loads comic sans for a split second if you don't have roboto slab cached (: */
 	font-family: "Roboto Slab", "Comic Sans", "Comic", cursive, sans-serif;
 }
 
@@ -108,10 +109,14 @@ header > h1 {
 	text-align: center;
 }
 
+.contact {
+	text-align: center;
+}
+
 .contact-list {
-	display: flex;
-	flex-direction: row;
-	justify-content: baseline;
+	/* display: flex;
+	flex-direction: row; */
+	justify-content: space-around;
 
 	list-style: none;
 }
