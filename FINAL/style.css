@@ -135,3 +135,12 @@ img.emoji {
 	width: 1rem;
 	height: 1rem;
 }
+
+.test {
+	color: red;
+}
+
+.fun-stuff:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
