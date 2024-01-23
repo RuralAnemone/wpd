@@ -15,7 +15,7 @@ document.querySelectorAll('#linux')?.forEach(e => {
 });
 
 document.querySelectorAll('.red')?.forEach(e => {
-	addEventListener('mouseover', () => {
+	e.addEventListener('mouseover', () => {
 		jsConfetti.addConfetti({
 			emojis: ['❌']
 		});
