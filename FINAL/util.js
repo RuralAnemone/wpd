@@ -1,10 +1,10 @@
 function timer(time) {
-	let progressContainer = document.createElement('div');
-	progressContainer.setAttribute('class', 'progress-container');
+	let progressContainer = document.createElement("div");
+	progressContainer.setAttribute("class", "progress-container");
 
-	let progressBar = document.createElement('progress');
-	progressBar.setAttribute('class', 'progress-bar');
-	progressBar.setAttribute('max', '100');
+	let progressBar = document.createElement("progress");
+	progressBar.setAttribute("class", "progress-bar");
+	progressBar.setAttribute("max", "100");
 
 	progressContainer.appendChild(progressBar);
 
@@ -18,7 +18,7 @@ function timer(time) {
 	let timer = setInterval(() => {
 		progress++;
 		console.log(progress);
-		progressBar.setAttribute('value', progress.toString());
+		progressBar.setAttribute("value", progress.toString());
 
 		if (progress > 100) {
 			clearInterval(timer);
