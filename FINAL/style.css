@@ -140,16 +140,34 @@ img.emoji {
 	color: red;
 }
 
+.fun-stuff:not(:hover) {
+	border-bottom: dotted 3px;
+}
+
 .fun-stuff:hover {
-	text-decoration: underline;
+	/* text-decoration: underline; */
+	border-bottom: solid 3px;
 	cursor: pointer;
 }
 
 .progress-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
 	width: 100%;
-	height: 3rem;
+	height: 100%;
+
+	backdrop-filter: blur(8px);
+	z-index: 1000;
 }
 
+/* Rest of your CSS code */
+
 .progress-bar {
-	width: 100%;
+	width: 80%;
 }
