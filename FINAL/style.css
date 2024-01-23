@@ -119,6 +119,8 @@ header > h1 {
 	justify-content: space-around;
 
 	list-style: none;
+
+	padding-left: 0;
 }
 
 .contact-item > a > img {
