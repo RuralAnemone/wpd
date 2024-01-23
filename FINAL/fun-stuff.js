@@ -1,17 +1,23 @@
 const jsConfetti = new JSConfetti();
 
-document.querySelector('#a-second')?.addEventListener('click', () => {
-	timer(60 * 1000);
-});
-
-document.querySelector('#linux')?.addEventListener('mouseover', () => {
-	jsConfetti.addConfetti({
-		emojis: ['🐧']
+document.querySelectorAll('#a-second')?.forEach(e => {
+	e.addEventListener('click', () => {
+		timer(60 * 1000);
 	});
 });
 
-document.querySelector('.red')?.addEventListener('mouseover', () => {
-	jsConfetti.addConfetti({
-		emojis: ['❌']
+document.querySelectorAll('#linux')?.forEach(e => {
+	e.addEventListener('mouseover', () => {
+		jsConfetti.addConfetti({
+			emojis: ['🐧']
+		});
+	});
+});
+
+document.querySelectorAll('.red')?.forEach(e => {
+	addEventListener('mouseover', () => {
+		jsConfetti.addConfetti({
+			emojis: ['❌']
+		});
 	});
 });
