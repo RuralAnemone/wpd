@@ -1,3 +1,3 @@
 document.querySelector('#a-second').addEventListener('click', () => {
-	timer(1000);
+	timer(60 * 1000);
 });

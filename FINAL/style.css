@@ -144,3 +144,12 @@ img.emoji {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+.progress-container {
+	width: 100%;
+	height: 3rem;
+}
+
+.progress-bar {
+	width: 100%;
+}
