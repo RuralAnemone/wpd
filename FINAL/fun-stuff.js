@@ -21,3 +21,11 @@ document.querySelectorAll(".red")?.forEach((e) => {
 		});
 	});
 });
+
+document.querySelectorAll(".green")?.forEach((e) => {
+	e.addEventListener("mouseover", () => {
+		jsConfetti.addConfetti({
+			emojis: ["✅"],
+		});
+	});
+});
