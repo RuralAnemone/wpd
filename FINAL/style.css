@@ -64,6 +64,10 @@ nav {
 	transition: 0.3s;
 }
 
+.navbar-link {
+	border: none !important;
+}
+
 .navbar-link.selected {
 	/* something interesting */
 	color: var(--green);
@@ -98,6 +102,15 @@ nav {
 	color: var(--yellow);
 }
 
+a:not(:hover) {
+	border-bottom: 2px dotted;
+}
+
+a:hover {
+	border-bottom: 2px solid;
+	text-decoration: none;
+}
+
 .content {
 	padding: 2rem;
 
@@ -121,6 +134,10 @@ header > h1 {
 	list-style: none;
 
 	padding-left: 0;
+}
+
+.contact-item > a {
+	border: none;
 }
 
 .contact-item > a > img {
