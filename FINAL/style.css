@@ -160,7 +160,7 @@ img.emoji {
 }
 
 .fun-stuff:not(:hover) {
-	border-bottom: dotted 3px;
+	border-bottom: dashed 2px;
 }
 
 .fun-stuff:hover {
