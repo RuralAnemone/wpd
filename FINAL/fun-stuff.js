@@ -9,3 +9,9 @@ document.querySelector('#linux')?.addEventListener('mouseover', () => {
 		emojis: ['🐧']
 	});
 });
+
+document.querySelector('.red')?.addEventListener('mouseover', () => {
+	jsConfetti.addConfetti({
+		emojis: ['❌']
+	});
+});
